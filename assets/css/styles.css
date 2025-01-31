@@ -289,3 +289,47 @@ a {
     bottom: -50px;
     right: -173px;
 }
+
+/* Client */
+.client {
+    margin-top: 100px;
+}
+
+.client__inner {
+    align-items: center;
+}
+
+.client__title {
+    position: relative;
+    padding-left: 99px;
+    color: var(--color-heading);
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19;
+}
+
+.client__title::before {
+    position: absolute;
+    content: "";
+    width: 86px;
+    border: 2px solid var(--primary-color);
+    top: 22px;
+    left: 0;
+}
+
+.client-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-item {
+    transition: transform 0.3s;
+}
+
+.client-item:hover {
+    transform: scale(1.1);
+}
+
+.client-item:nth-child(2) {
+    margin-top: 36px;
+}
