@@ -79,6 +79,18 @@
     --offset-number: 11;
 }
 
+.row > [class*="order-"] {
+    order: var(--order);
+}
+
+.order-1 {
+    --order: 1;
+}
+
+.order-2 {
+    --order: 2;
+}
+
 .col,
 .row[class*="row-cols-"] > *,
 .row > [class*="col-"] {
@@ -314,6 +326,15 @@
         --spacer: 0;
     }
 
+    .order-md-1 {
+        --order:1;
+    }
+
+    .order-md-2 {
+        --order:2;
+
+    }
+
     .offset-md-0 {
         --offset-number: 0;
     }
@@ -445,6 +466,15 @@
 
     .g-lg-0 {
         --spacer: 0;
+    }
+
+    .order-lg-1 {
+        --order:1;
+    }
+
+    .order-lg-2 {
+        --order:2;
+
     }
 
     .offset-lg-0 {
