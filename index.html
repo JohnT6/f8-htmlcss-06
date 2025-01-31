@@ -39,6 +39,7 @@
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body style="height: 10000000px">
+        <!-- Pc header -->
         <header class="header fixed">
             <div class="header__content">
                 <div class="header__inner">
@@ -50,16 +51,18 @@
                                 class="mail-img"
                             />
                         </div>
-                        <p class="mail__link hide-on-mobile">hi@arif.interactive</p>
+                        <p class="mail__link hide-on-mobile">
+                            hi@arif.interactive
+                        </p>
                     </a>
-                    <a href="#">
+                    <a href="#" class="header__logo-wrap">
                         <img
                             src="./assets/img/Logo.svg"
                             alt=""
                             class="header__logo"
                         />
                     </a>
-                    <nav class="navbar">
+                    <nav class="navbar hide-on-mobile" id="pc-nav">
                         <ul class="header__list">
                             <li>
                                 <a href="#project" class="header__item">
@@ -83,8 +86,47 @@
                             </li>
                         </ul>
                     </nav>
+                    <!-- Tablet Mobile menu -->
+                    <label
+                        for="menu-checkbox"
+                        class="toggle-menu mobile-header"
+                    >
+                        <!-- Tablet Mobile menu -->
+
+                        <img src="./assets/img/menu-tablet-mobile.svg" alt="" />
+                    </label>
                 </div>
             </div>
         </header>
+        <!-- Tablet Mobile Header -->
+        <header class="mobile-header mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <a href="#"
+                    ><img
+                        src="./assets/img/logo.svg"
+                        alt=""
+                        class="logo-mobile"
+                /></a>
+                <!-- Navigation -->
+                <ul id="mobile-nav"></ul>
+            </div>
+        </header>
+        <script>
+            const pcNav = document.querySelector("#pc-nav");
+            const mobileNav = document.querySelector("#mobile-nav");
+            // Copy from PC -> Mobile
+            mobileNav.innerHTML = pcNav.innerHTML;
+        </script>
     </body>
 </html>
