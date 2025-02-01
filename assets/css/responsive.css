@@ -542,6 +542,12 @@
         line-height: 1.17;
     }
 
+    .design__desc {
+        width: 350px;
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
+
     .design__stats {
         padding: 30px 0;
         column-gap: 50px;
