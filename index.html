@@ -376,8 +376,8 @@
                             <div class="project__top-left">
                                 <p class="project__desc">
                                     Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. In urna, non nisl tincidunts
-                                    ut elementum turpis.
+                                    adipiscing elit. In urna, non nisl
+                                    tincidunts ut elementum turpis.
                                 </p>
                             </div>
                         </div>
@@ -504,12 +504,115 @@
                     </div>
                 </div>
             </section>
+            <!-- Design -->
+            <section class="design">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 design__info">
+                            <div class="design__info-wrap">
+                                <p class="design__info-text">
+                                    Hey,,,,It’s Arif
+                                </p>
+                                <img
+                                    src="./assets/icon/design-hand.svg"
+                                    alt=""
+                                    class="design__intro-img"
+                                />
+                            </div>
+                            <h2 class="design__heading">
+                                Interactive Designer
+                            </h2>
+                            <p class="design__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="design__stats">
+                                <div class="design__stats-item">
+                                    <p class="design__stats-number">08+</p>
+                                    <p class="design__stats-text">
+                                        Years Experience
+                                    </p>
+                                </div>
+                                <div class="design__stats-item">
+                                    <p class="design__stats-number">21+</p>
+                                    <p class="design__stats-text">
+                                        Features &amp; Awards
+                                    </p>
+                                </div>
+                                <div class="design__stats-item">
+                                    <p class="design__stats-number">97%</p>
+                                    <p class="design__stats-text">
+                                        Clients Rating
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="design__media">
+                                <img
+                                    class="design__poster"
+                                    id="poster"
+                                    onclick="playVideo()"
+                                />
+                                <figure
+                                    class="design__play-btn-wrap"
+                                    id="play-button"
+                                    onclick="playVideo()"
+                                >
+                                    <img
+                                        src="./assets/icon/design-btn-play.svg"
+                                        alt=""
+                                        class="design__play-btn"
+                                    />
+                                </figure>
+                                <a
+                                    class="btn design__intro"
+                                    id="intro-button"
+                                    onclick="playVideo()"
+                                >
+                                    Intro Video
+                                </a>
+                                <video
+                                    controls=""
+                                    loading="lazy"
+                                    class="design__video"
+                                    id="video"
+                                >
+                                    <source
+                                        src="./assets/video/design-video1.mp4"
+                                        type="video/mp4"
+                                    />
+                                    Trình duyệt của bạn không hỗ trợ thẻ
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <script>
             const pcNav = document.querySelector("#pc-nav");
             const mobileNav = document.querySelector("#mobile-nav");
             // Copy from PC -> Mobile
             mobileNav.innerHTML = pcNav.innerHTML;
+            function playVideo() {
+                var video = document.getElementById("video");
+                var poster = document.getElementById("poster");
+                var playButton = document.getElementById("play-button");
+                var introButton = document.getElementById("intro-button");
+                video.style.display = "block";
+                poster.style.display = "none";
+                playButton.style.display = "none";
+                introButton.style.display = "none";
+                video.play();
+            }
         </script>
     </body>
 </html>
