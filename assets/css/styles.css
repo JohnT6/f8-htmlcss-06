@@ -795,6 +795,7 @@ a {
     font-weight: 500;
     line-height: 1.25;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .question-item__desc {
@@ -817,6 +818,7 @@ a {
     height: 50px;
     border-radius: 50%;
     border: 1px solid rgba(22, 26, 28, 0.2);
+    cursor: pointer;
     transition: border-color 0.3s ease;
 }
 

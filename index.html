@@ -37,6 +37,11 @@
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- Animations -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Pc header -->
@@ -127,7 +132,11 @@
             <section class="hero">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-12 order-lg-1 order-2">
-                        <div class="hero__media">
+                        <div
+                            class="hero__media"
+                            data-aos="fade-right"
+                            data-aos-duration="2000"
+                        >
                             <figure class="hero__img-wrap">
                                 <img
                                     src="./assets/img/hero-img.png"
@@ -146,7 +155,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-12 order-lg-2 order-1">
-                        <section class="hero__content">
+                        <section
+                            class="hero__content"
+                            data-aos="fade-left"
+                            data-aos-duration="2000"
+                        >
                             <h1 class="hero__heading">
                                 An Interactive Designer
                             </h1>
@@ -202,10 +215,18 @@
             <section class="client">
                 <div class="container">
                     <div class="row client__inner">
-                        <div class="col-lg-4 col-12">
+                        <div
+                            class="col-lg-4 col-12"
+                            data-aos="fade-right"
+                            data-aos-duration="2000"
+                        >
                             <p class="client__title">Meet my recent clients</p>
                         </div>
-                        <div class="col-lg-8 col-12 client__icon">
+                        <div
+                            class="col-lg-8 col-12 client__icon"
+                            data-aos="fade-left"
+                            data-aos-duration="2000"
+                        >
                             <div class="client-list">
                                 <div class="client-group">
                                     <img
@@ -263,7 +284,11 @@
             <!-- Special -->
             <section class="special" id="service">
                 <div class="container">
-                    <div class="row">
+                    <div
+                        class="row"
+                        data-aos="fade-down"
+                        data-aos-duration="2000"
+                    >
                         <div class="col col-lg-12 col-12">
                             <section class="special__top">
                                 <h2 class="special__heading">Specialities</h2>
@@ -275,7 +300,11 @@
                             </section>
                         </div>
                     </div>
-                    <div class="special__bottom">
+                    <div
+                        class="special__bottom"
+                        data-aos="zoom-in"
+                        data-aos-duration="2000"
+                    >
                         <div class="row special__row">
                             <div
                                 class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-12 offset-0"
@@ -366,13 +395,21 @@
             <section class="project" id="project">
                 <div class="container">
                     <div class="row project__top">
-                        <div class="col-lg-5 col-12 project__heading-wrap">
+                        <div
+                            class="col-lg-5 col-12 project__heading-wrap"
+                            data-aos="fade-right"
+                            data-aos-duration="2000"
+                        >
                             <h2 class="project__heading">
                                 Take a look at <br />
                                 my recent projects
                             </h2>
                         </div>
-                        <div class="col-lg-5 col-12">
+                        <div
+                            class="col-lg-5 col-12"
+                            data-aos="fade-left"
+                            data-aos-duration="2000"
+                        >
                             <div class="project__top-left">
                                 <p class="project__desc">
                                     Lorem ipsum dolor sit amet, consectetur
@@ -382,7 +419,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row row-cols-lg-2 row-cols-md-1 project__list">
+                    <div
+                        class="row row-cols-lg-2 row-cols-md-1 project__list"
+                        data-aos="zoom-out"
+                        data-aos-duration="2000"
+                    >
                         <div class="col project__item-wrap">
                             <div class="project__item">
                                 <section class="project__item-left">
@@ -507,7 +548,7 @@
             <!-- Design -->
             <section class="design" id="journey">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" data-aos="fade-down" data-aos-duration="2000">
                         <div class="col-12 design__info">
                             <div class="design__info-wrap">
                                 <p class="design__info-text">
@@ -529,7 +570,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-duration="2000">
                         <div class="col-12">
                             <div class="design__stats">
                                 <div class="design__stats-item">
@@ -596,9 +637,9 @@
                     </div>
                 </div>
             </section>
-            <section class="reviews">
+            <section class="reviews" >
                 <div class="container">
-                    <div class="row">
+                    <div class="row" data-aos="fade-down" data-aos-duration="2000">
                         <div class="col-12 review__top">
                             <h2 class="review__heading">What people says</h2>
                             <p class="review__desc">
@@ -643,7 +684,7 @@
             <!-- Question -->
             <section class="question">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" data-aos="fade-right" data-aos-duration="2000">
                         <div class="col-lg-7 col-12">
                             <h2 class="question__heading">
                                 A few questions <br />
@@ -651,7 +692,7 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="question__list">
+                    <div class="question__list" data-aos="flip-left" data-aos-duration="2000">
                         <div class="row">
                             <div class="col-lg-11 col-12">
                                 <input
@@ -663,9 +704,11 @@
                                 />
                                 <div class="question-item">
                                     <div class="question-item__info">
-                                        <h3 class="question-item__heading">
-                                            What is your hourly rate?
-                                        </h3>
+                                        <label for="question__1">
+                                            <h3 class="question-item__heading">
+                                                What is your hourly rate?
+                                            </h3>
+                                        </label>
                                         <p class="question-item__desc">
                                             Lorem ipsum dolor sit amet,
                                             consectetur adipiscing elit. In
@@ -702,10 +745,12 @@
                                 />
                                 <div class="question-item">
                                     <div class="question-item__info">
-                                        <h3 class="question-item__heading">
-                                            What type of projects do you take
-                                            on?
-                                        </h3>
+                                        <label for="question__2">
+                                            <h3 class="question-item__heading">
+                                                What type of projects do you
+                                                take on?
+                                            </h3>
+                                        </label>
                                         <p class="question-item__desc">
                                             Lorem ipsum dolor sit amet,
                                             consectetur adipiscing elit. In
@@ -742,9 +787,11 @@
                                 />
                                 <div class="question-item">
                                     <div class="question-item__info">
-                                        <h3 class="question-item__heading">
-                                            How do you charge for projects ?
-                                        </h3>
+                                        <label for="question__3">
+                                            <h3 class="question-item__heading">
+                                                How do you charge for projects ?
+                                            </h3>
+                                        </label>
                                         <p class="question-item__desc">
                                             Lorem ipsum dolor sit amet,
                                             consectetur adipiscing elit. In
@@ -781,9 +828,11 @@
                                 />
                                 <div class="question-item">
                                     <div class="question-item__info">
-                                        <h3 class="question-item__heading">
-                                            What time-zone do you work in?
-                                        </h3>
+                                        <label for="question__4">
+                                            <h3 class="question-item__heading">
+                                                What time-zone do you work in?
+                                            </h3>
+                                        </label>
                                         <p class="question-item__desc">
                                             Lorem ipsum dolor sit amet,
                                             consectetur adipiscing elit. In
@@ -816,7 +865,7 @@
             <!-- Setup -->
             <section class="setup">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" data-aos="fade-down" data-aos-duration="2000">
                         <div class="col-12 setup__top">
                             <h2 class="setup__heading">My atmosphere</h2>
                             <p class="setup__desc">
@@ -829,7 +878,7 @@
                             >
                         </div>
                     </div>
-                    <div class="setup__bottom">
+                    <div class="setup__bottom" data-aos="zoom-in-down" data-aos-duration="2000">
                         <div class="row setup__row">
                             <div class="col-lg-4 col-12 setup__item">
                                 <img
@@ -864,9 +913,9 @@
                 </div>
             </section>
             <!-- Contact -->
-            <section class="contact" id="contact">
+            <section class="contact" id="contact" >
                 <div class="container">
-                    <div class="contact__inner">
+                    <div class="contact__inner" data-aos="flip-up" data-aos-duration="2000">
                         <img
                             src="./assets/img/contact-img.png"
                             alt=""
@@ -958,7 +1007,20 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                if (window.innerWidth >= 992) {
+                    // Chỉ kích hoạt AOS trên màn hình >= 992px (PC)
+                    AOS.init();
+                } else {
+                    document
+                        .querySelectorAll("[data-aos]")
+                        .forEach(function (element) {
+                            element.removeAttribute("data-aos");
+                        });
+                }
+            });
             const pcNav = document.querySelector("#pc-nav");
             const mobileNav = document.querySelector("#mobile-nav");
             // Copy from PC -> Mobile
