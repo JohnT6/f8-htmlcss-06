@@ -716,6 +716,43 @@
     .setup__dots {
         margin-top: 40px;
     }
+
+    /* Contact */
+    .contact {
+        margin-top: 120px;
+    }
+
+    .contact__inner {
+        padding: 36px 0;
+    }
+
+    .contact__img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .contact__heading {
+        margin-top: 10px;
+        width: 230px;
+        font-size: 3.6rem;
+        line-height: 1.17;
+        text-align: center;
+    }
+
+    .contact__desc {
+        margin-top: 10px;
+        width: 350px;
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
+
+    .contact__btn {
+        --height: 55px;
+
+        margin-top: 42px;
+        width: 147px;
+        font-size: 1.6rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
