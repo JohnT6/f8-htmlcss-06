@@ -615,6 +615,52 @@
     .review__dots {
         margin-top: 20px;
     }
+
+    /* Question */
+    .question__heading {
+        margin-left: 30px;
+        width: 316px;
+        font-size: 3.6rem;
+        line-height: 1.17;
+    }
+
+    .question__list {
+        align-items: center;
+    }
+
+    .question-item {
+        align-items: initial;
+        padding-bottom: 15px;
+        width: 370px;
+    }
+
+    .question-item__info {
+        margin-left: 10px;
+    }
+
+    .question-item__heading {
+        width: 264px;
+        font-size: 2.4rem;
+    }
+
+    .question-item__desc {
+        width: 316px;
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
+
+    .question__label {
+        width: 33px;
+        height: 33px;
+    }
+
+    .question__label-sign {
+        width: 30%;
+    }
+
+    .question__input:checked + .question-item .question-item__desc {
+        max-height: 78px;
+    }
 }
 
 @media screen and (max-width: 576px) {
