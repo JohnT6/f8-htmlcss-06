@@ -38,7 +38,7 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
-    <body style="height: 10000000px">
+    <body>
         <!-- Pc header -->
         <header class="header fixed">
             <div class="header__content">
@@ -260,8 +260,8 @@
                     </div>
                 </div>
             </section>
-
-            <section class="special">
+            <!-- Special -->
+            <section class="special" id="service">
                 <div class="container">
                     <div class="row">
                         <div class="col col-lg-12 col-12">
@@ -363,7 +363,7 @@
                 </div>
             </section>
             <!-- Project -->
-            <section class="project">
+            <section class="project" id="project">
                 <div class="container">
                     <div class="row project__top">
                         <div class="col-lg-5 col-12 project__heading-wrap">
@@ -505,7 +505,7 @@
                 </div>
             </section>
             <!-- Design -->
-            <section class="design">
+            <section class="design" id="journey">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 design__info">
@@ -864,10 +864,14 @@
                 </div>
             </section>
             <!-- Contact -->
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container">
                     <div class="contact__inner">
-                        <img src="./assets/img/contact-img.png" alt="" class="contact__img" />
+                        <img
+                            src="./assets/img/contact-img.png"
+                            alt=""
+                            class="contact__img"
+                        />
                         <h2 class="contact__heading">
                             Got a project? Let’s talk
                         </h2>
@@ -881,6 +885,79 @@
                 </div>
             </section>
         </main>
+        <div class="footer__top">
+            <div class="footer__content">
+                <div class="footer__inner">
+                    <a
+                        href="mailto:hi@arif.interactive"
+                        class="footer__top-mail__inner"
+                    >
+                        <div class="footer__top-mail-img__wrap">
+                            <img
+                                src="./assets/icon/icon-email.svg"
+                                alt="hi@arif.interactive"
+                                class="footer__top-mail-img"
+                            />
+                        </div>
+                        <p class="footer__top-mail__link">
+                            hi@arif.interactive
+                        </p>
+                    </a>
+                    <a href="#" class="footer__logo-wrap">
+                        <img
+                            src="./assets/img/Logo.svg"
+                            alt=""
+                            class="footer__logo"
+                        />
+                    </a>
+                    <nav class="navbar">
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#project" class="footer__item">
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#journey" class="footer__item">
+                                    Journey
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#service" class="footer__item">
+                                    Service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="footer__item">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer--top__policy-wrap">
+                        <p class="footer__text footer__policy">
+                            Privacy Policy
+                        </p>
+                        <p class="footer__text">Terms of Conditions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer__bottom">
+            <div class="container">
+                <div class="footer-bottom__inner">
+                    <p class="footer__text">
+                        ©interactiveArif 2021. All rights reserved.
+                    </p>
+                    <div class="footer__policy-wrap">
+                        <p class="footer__text footer__policy">
+                            Privacy Policy
+                        </p>
+                        <p class="footer__text">Terms of Conditions</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script>
             const pcNav = document.querySelector("#pc-nav");
             const mobileNav = document.querySelector("#mobile-nav");
