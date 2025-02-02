@@ -63,6 +63,43 @@ a {
     opacity: 0.9;
 }
 
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    margin-top: 59px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: rgba(8, 4, 21, 0.2);
+    border: 1px solid transparent;
+    transition: background-color 0.3s;
+}
+
+.dot:hover {
+    background-color: var(--primary-color);
+}
+
+.dot-active {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+}
+.dot-active::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
 /* Header */
 .header {
     padding: 20px 0;
@@ -545,8 +582,6 @@ a {
     text-align: center;
 }
 
-
-
 .design__stats {
     margin: 70px auto 0;
     padding: 20px 0;
@@ -633,4 +668,89 @@ a {
     width: 100%;
     height: 100%;
     display: none;
+}
+
+/* Review */
+.reviews {
+    margin-top: 150px;
+}
+
+.review__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__heading {
+    color: var(--color-heading);
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.18;
+}
+
+.review__desc {
+    margin-top: 20px;
+    width: 570px;
+    color: var(--color-desc);
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+}
+
+.review__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.review__quote {
+    width: 679px;
+    color: var(--color-desc);
+    font-size: 2.4rem;
+    line-height: 1.67;
+    text-align: center;
+}
+
+.review__people {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-top: 36px;
+}
+
+.review__avt-wrap {
+    position: relative;
+    background-color: #f29764;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.review__avt {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review__name {
+    color: var(--color-heading);
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.33;
+}
+
+.review__text {
+    color: var(--color-desc);
+    line-height: 1.81;
+    text-align: center;
+}
+
+.review__dots {
+    margin-top: 40px;
 }
