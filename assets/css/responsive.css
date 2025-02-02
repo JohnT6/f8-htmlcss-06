@@ -318,6 +318,17 @@
     .hero-decor-large {
         top: 330px;
     }
+
+    /* Setup */
+    .setup__row {
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .setup__item {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Mobile */
@@ -660,6 +671,50 @@
 
     .question__input:checked + .question-item .question-item__desc {
         max-height: 78px;
+    }
+
+    /* Setup */
+    .setup {
+        margin-top: 120px;
+    }
+
+    .setup__row {
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .setup__item {
+        display: flex;
+        justify-content: center;
+    }
+    .setup__heading {
+        font-size: 3.6rem;
+        line-height: 1.17;
+    }
+
+    .setup__desc {
+        width: 350px;
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
+
+    .setup__link {
+        margin-top: 10px;
+        font-size: 2rem;
+        line-height: 2;
+    }
+
+    .setup__bottom {
+        margin-top: 60px;
+    }
+
+    .setup__item-img {
+        width: 352px;
+        height: 503px;
+    }
+
+    .setup__dots {
+        margin-top: 40px;
     }
 }
 
